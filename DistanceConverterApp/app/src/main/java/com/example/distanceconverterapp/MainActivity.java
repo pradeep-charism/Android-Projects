@@ -17,8 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button convertToKmButton = findViewById(R.id.convertToKmButton);
         Button convertToMilesButton = findViewById(R.id.convertToMilesButton);
+        Button clearButton = findViewById(R.id.clearButton);
         convertMilesToKm(convertToKmButton);
         convertKmToMiles(convertToMilesButton);
+        clear(clearButton);
     }
 
     private void convertMilesToKm(Button convertToKmButton) {
@@ -45,6 +47,19 @@ public class MainActivity extends AppCompatActivity {
                 double miles = kilometer * 0.62137;
                 DecimalFormat df = new DecimalFormat("##.##");
                 milesValue.setText(df.format(miles));
+            }
+        });
+    }
+
+    private void clear(Button clearButton) {
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText kilometerValue = findViewById(R.id.kilometerValue);
+                EditText milesValue = findViewById(R.id.milesValue);
+                DecimalFormat df = new DecimalFormat("##.##");
+                kilometerValue.setText(df.format(0));
+                milesValue.setText(df.format(0));
             }
         });
     }
