@@ -7,6 +7,45 @@
     android:background="#84B7CF"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableRow3"
+        android:layout_width="350dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="1dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginRight="98dp"
+            android:layout_marginBottom="34dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Distance Converter App"
+            android:textColor="#03093C"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.538" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="wrap_content"
@@ -18,16 +57,17 @@
         android:layout_height="231dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
+        android:layout_marginBottom="1dp"
         android:background="#03093C"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/tableRow2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/tableRow3">
 
         <TextView
             android:id="@+id/milesId"
@@ -61,45 +101,44 @@
 
         <EditText
             android:id="@+id/milesValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
+            android:layout_width="149dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="72dp"
             android:layout_marginEnd="33dp"
             android:layout_marginRight="33dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginBottom="25dp"
+            android:background="#FFFFFF"
             android:ems="10"
-            android:foreground="@color/cardview_light_background"
             android:inputType="numberSigned"
-            android:textColor="#8C1010"
+            android:textColor="#03093C"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@+id/kilometerValue"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/milesId"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/kilometerValue"
             style="@android:style/Widget.DeviceDefault.Light.EditText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="151dp"
+            android:layout_height="28dp"
             android:layout_marginStart="23dp"
             android:layout_marginLeft="23dp"
-            android:layout_marginTop="21dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginBottom="73dp"
+            android:background="#FFFFFF"
             android:ems="10"
-            android:foreground="@color/cardview_light_background"
             android:inputType="numberSigned"
             android:singleLine="true"
-            android:textColor="#8C1010"
+            android:textColor="#03093C"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/kilometerId"
-            app:layout_constraintTop_toBottomOf="@+id/milesValue" />
+            app:layout_constraintStart_toEndOf="@+id/kilometerId" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -109,12 +148,10 @@
         android:layout_height="90dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="1dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="211dp"
         android:background="#03093C"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
