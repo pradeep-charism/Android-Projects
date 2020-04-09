@@ -6,83 +6,167 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/milesId"
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Miles"
-        android:textAllCaps="true"
-        android:textColor="#0A1B7E"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="256dp" />
+        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/kilometerId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Kilometer"
-        android:textAllCaps="true"
-        android:textColor="#061357"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="340dp" />
-
-    <EditText
-        android:id="@+id/milesValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:textSize="12sp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableRow"
+        android:layout_width="349dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="3dp"
+        android:background="#EAE8D8"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/kilometerValue"
-        style="@android:style/Widget.DeviceDefault.Light.EditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberSigned"
-        android:singleLine="true"
-        android:textColor="#8C1010"
-        android:textSize="12sp"
-        android:theme="@style/AppTheme"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="335dp" />
+        <TextView
+            android:id="@+id/milesId"
+            android:layout_width="71dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Miles"
+            android:textAllCaps="true"
+            android:textColor="#0A1B7E"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/convertToKmButton"
-        style="@android:style/Widget.Material.Light.Button"
-        android:layout_width="73dp"
-        android:layout_height="54dp"
-        android:text="Convert to Kilometer"
-        android:textSize="8sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="451dp" />
+        <TextView
+            android:id="@+id/kilometerId"
+            android:layout_width="116dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="128dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginRight="200dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Kilometer"
+            android:textAllCaps="true"
+            android:textColor="#061357"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/convertToMilesButton"
-        android:layout_width="73dp"
-        android:layout_height="54dp"
-        android:text="Convert        to        miles"
-        android:textSize="8sp"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="448dp" />
+        <EditText
+            android:id="@+id/milesValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginBottom="21dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textColor="#8C1010"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/kilometerValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/milesId"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        style="@android:style/Widget.Holo.Button"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:background="#FFFFFF"
-        android:foreground="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteX="264dp"
-        tools:layout_editor_absoluteY="448dp" />
+        <EditText
+            android:id="@+id/kilometerValue"
+            style="@android:style/Widget.DeviceDefault.Light.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="64dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:singleLine="true"
+            android:textColor="#8C1010"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/kilometerId"
+            app:layout_constraintTop_toBottomOf="@+id/milesValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tableRow2"
+        android:layout_width="349dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="211dp"
+        android:background="#BFEFAB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+        <Button
+            android:id="@+id/convertToKmButton"
+            style="@android:style/Widget.Material.Light.Button"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="21dp"
+            android:text="Convert to Kilometer"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/convertToMilesButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/convertToMilesButton"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Convert        to        miles"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/convertToKmButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/clearButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="20dp"
+            android:text="CLEAR"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/convertToMilesButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
