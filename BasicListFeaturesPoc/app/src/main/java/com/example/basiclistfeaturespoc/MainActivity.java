@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         // retrieve a reference to the View defined in the activity_main.xml
-        ListView listViewAnimals = (ListView) findViewById(R.id.listView);
+        ListView listViewAnimals = findViewById(R.id.listView);
 
         // build an adapter to feed the list with the content of an array of strings
         // (defined in the res/values/strings.xml file), and where each string will be
