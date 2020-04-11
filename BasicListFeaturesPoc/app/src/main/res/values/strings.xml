@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BasicListFeaturesPoc</string>
+    <string name="animal_list_view_name">Pick an animal of your choice</string>
+    <string name="dog">Dog</string>
+    <string name="cat">Cat</string>
+    <string name="pig">Pig</string>
+    <string name="horse">Horse</string>
+    <string name="toastMessage">Your choice is</string>
+    <string-array name="animalsArray">
+        <item>@string/dog</item>
+        <item>@string/cat</item>
+        <item>@string/pig</item>
+        <item>@string/horse</item>
+    </string-array>
 </resources>

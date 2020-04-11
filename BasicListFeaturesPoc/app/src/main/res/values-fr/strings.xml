@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BasicListFeaturesPoc</string>
+    <string name="animal_list_view_name">Choisissez un animal</string>
+    <string name="dog">Chien</string>
+    <string name="cat">Chat</string>
+    <string name="pig">Cochon</string>
+    <string name="horse">Cheval</string>
+    <string name="toastMessage">Votre choix est</string>
+</resources>
