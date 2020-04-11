@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BasicFeaturesPoc</string>
+    <string name="app_name">Button Basics</string>
     <string name="the_invisible_man_to_do_list">The Invisible Man\'s To Do List</string>
     <string name="the_pink_panther_to_do_list">The Pink Panther\'s To Do List</string>
     <string name="green_reset_button">Reset Button</string>
