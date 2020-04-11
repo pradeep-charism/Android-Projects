@@ -17,8 +17,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="#AED2FF"
-        android:text="The Invisible Man&apos;s To Do List" />
+        android:background="@color/light_blue"
+        android:text="@string/the_invisible_man_to_do_list" />
 
     <Button
         android:id="@+id/button_pinkPanther"
@@ -27,8 +27,8 @@
         android:layout_below="@id/button_blueInvisible"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:background="#FD9BF3"
-        android:text="The Pink Panther&apos;s To Do List"/>
+        android:background="@color/light_pink"
+        android:text="@string/the_pink_panther_to_do_list"/>
 
 </RelativeLayout>
 

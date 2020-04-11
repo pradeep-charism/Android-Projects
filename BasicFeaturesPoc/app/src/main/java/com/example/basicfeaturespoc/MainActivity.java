@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Button is added programmatically to the layout
         buttonGreen = new Button(getApplicationContext());
         buttonGreen.setOnClickListener(this);
-        buttonGreen.setText("Reset Button");
+        buttonGreen.setText(R.string.green_reset_button);
         buttonGreen.setTextColor(Color.BLACK);
-        buttonGreen.setBackgroundColor(Color.parseColor("#FFA4F4A7"));
+        buttonGreen.setBackgroundColor(Color.parseColor(getString(R.string.light_green_color)));
 
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams.addRule(RelativeLayout.BELOW, buttonPink.getId());
