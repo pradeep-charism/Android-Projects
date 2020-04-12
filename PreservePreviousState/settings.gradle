@@ -1,0 +1,2 @@
+rootProject.name='PreservePreviousState'
+include ':app'
