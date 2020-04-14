@@ -13,4 +13,5 @@
 .externalNativeBuild
 .cxx
 .idea
+/.idea
 .idea/*.*
