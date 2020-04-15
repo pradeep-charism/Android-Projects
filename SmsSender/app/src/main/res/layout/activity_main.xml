@@ -25,4 +25,13 @@
         android:layout_centerVertical="true"
         android:onClick="sendMessage"
         android:text="Send" />
+
+    <Button
+        android:id="@+id/sendMessageDirectly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendMessage"
+        android:layout_centerInParent="true"
+        android:onClick="sendMessageDirectly"
+        android:text="Send Direct" />
 </RelativeLayout>
