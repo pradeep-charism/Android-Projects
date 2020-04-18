@@ -3,6 +3,7 @@ package com.example.marvelmovies;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viewTrailersScreen(View v){
-        Intent homeScreen = new Intent(getApplicationContext(), SecondActivity.class);
+        Toast.makeText(getApplicationContext(), R.string.welcome_message, Toast.LENGTH_SHORT).show();
+        Intent homeScreen = new Intent(this, SecondActivity.class);
         startActivity(homeScreen);
-
     }
 }
