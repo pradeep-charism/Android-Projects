@@ -1,10 +1,10 @@
 package com.example.marvelmovies;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viewTrailersScreen(View v){
-        Intent homeScreen = new Intent(getApplicationContext(), ListTrailersActivity.class);
+        Intent homeScreen = new Intent(getApplicationContext(), SecondActivity.class);
         startActivity(homeScreen);
 
     }
