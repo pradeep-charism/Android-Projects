@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
@@ -12,23 +12,81 @@
     android:paddingBottom="10dp"
     tools:context=".MainActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
+        app:srcCompat="@drawable/chatbutton" />
+
     <ImageView
         android:id="@+id/marvel_trailers_logo"
-        android:layout_width="371dp"
-        android:layout_height="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="2"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="138dp"
         android:contentDescription="@string/marvel_trailers_logo_description"
-        android:src="@drawable/marveltrailerslogo" />
+        android:src="@drawable/marveltrailerslogo"
+        app:layout_constraintBottom_toTopOf="@+id/marvel_universe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/marvel_universe"
         android:layout_width="231dp"
         android:layout_height="116dp"
         android:layout_gravity="clip_vertical|center_horizontal"
-        android:layout_weight="3"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
         android:contentDescription="@string/marvel_universe_description"
-        android:src="@drawable/marveluniverse" />
+        android:src="@drawable/marveluniverse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_trailers_logo" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
+        app:srcCompat="@drawable/playbutton" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
+        app:srcCompat="@drawable/help" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
