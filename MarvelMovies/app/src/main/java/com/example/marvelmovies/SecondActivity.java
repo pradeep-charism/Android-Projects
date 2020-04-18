@@ -6,53 +6,38 @@ import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
-import com.google.android.youtube.player.YouTubePlayerView;
 
 public class SecondActivity extends YouTubeBaseActivity {
 
-        @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_second);
+    private final String DEVELOPER_API_KEY = "PRADEEP KUMAR DEVELOPER KEY";
 
-//            YouTubePlayerView youTubePlayerView =
-//                    (YouTubePlayerView) findViewById(R.id.player);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
 
-//            youTubePlayerView.initialize("YOUR API KEY",
-//                    new YouTubePlayer.OnInitializedListener() {
-//                        @Override
-//                        public void onInitializationSuccess(YouTubePlayer.Provider provider,
-//                                                            YouTubePlayer youTubePlayer, boolean b) {
-//
-//                            // do any work here to cue video, play video, etc.
-//                            youTubePlayer.cueVideo("5xVh-7ywKpE");
-//                        }
-//                        @Override
-//                        public void onInitializationFailure(YouTubePlayer.Provider provider,
-//                                                            YouTubeInitializationResult youTubeInitializationResult) {
-//
-//                        }
-//                    });
+        addYoutubeFragment(getYoutubeFragmentFor(R.id.youtubeFragment1), getString(R.string.captain_marvel_link));
 
-
-
-
-            YouTubePlayerFragment youtubeFragment = (YouTubePlayerFragment)
-                    getFragmentManager().findFragmentById(R.id.youtubeFragment);
-            youtubeFragment.initialize("YOUR API KEY",
-                    new YouTubePlayer.OnInitializedListener() {
-                        @Override
-                        public void onInitializationSuccess(YouTubePlayer.Provider provider,
-                                                            YouTubePlayer youTubePlayer, boolean b) {
-                            // do any work here to cue video, play video, etc.
-                            youTubePlayer.cueVideo("5xVh-7ywKpE");
-                        }
-                        @Override
-                        public void onInitializationFailure(YouTubePlayer.Provider provider,
-                                                            YouTubeInitializationResult youTubeInitializationResult) {
-
-                        }
-                    });
-
-        }
     }
+
+    private YouTubePlayerFragment getYoutubeFragmentFor(int p) {
+        return (YouTubePlayerFragment) getFragmentManager().findFragmentById(p);
+    }
+
+    private void addYoutubeFragment(YouTubePlayerFragment youtubeFragment, final String youtubeLink) {
+        youtubeFragment.initialize(DEVELOPER_API_KEY,
+                new YouTubePlayer.OnInitializedListener() {
+                    @Override
+                    public void onInitializationSuccess(YouTubePlayer.Provider provider,
+                                                        YouTubePlayer youTubePlayer, boolean b) {
+                        youTubePlayer.cueVideo(youtubeLink);
+                    }
+
+                    @Override
+                    public void onInitializationFailure(YouTubePlayer.Provider provider,
+                                                        YouTubeInitializationResult youTubeInitializationResult) {
+
+                    }
+                });
+    }
+}
