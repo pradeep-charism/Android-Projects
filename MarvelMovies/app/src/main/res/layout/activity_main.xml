@@ -13,7 +13,7 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/discussionButton"
         android:layout_width="65dp"
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
@@ -22,9 +22,10 @@
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="75dp"
+        android:contentDescription="@string/discussion_room"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/helpButton"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
         app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
         app:srcCompat="@drawable/chatbutton" />
 
@@ -63,30 +64,50 @@
         app:layout_constraintTop_toBottomOf="@+id/marvel_trailers_logo" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/playButton"
         android:layout_width="65dp"
         android:layout_height="60dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="150dp"
         android:layout_marginBottom="75dp"
+        android:contentDescription="@string/view_trailers"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
         app:srcCompat="@drawable/playbutton" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/helpButton"
         android:layout_width="65dp"
         android:layout_height="60dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
         android:layout_marginBottom="75dp"
+        android:contentDescription="@string/help"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
         app:srcCompat="@drawable/help" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="124dp"
+        android:text="@string/the_marvel_universe"
+        android:textColor="#D80F0F"
+        app:layout_constrainedHeight="false"
+        app:layout_constraintBottom_toTopOf="@+id/discussionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marvel_universe" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
