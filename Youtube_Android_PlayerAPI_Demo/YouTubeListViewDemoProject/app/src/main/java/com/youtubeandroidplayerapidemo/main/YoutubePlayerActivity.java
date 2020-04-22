@@ -1,9 +1,9 @@
 package com.youtubeandroidplayerapidemo.main;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.util.Log;
-import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
@@ -11,12 +11,6 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 import com.youtubeandroidplayerapidemo.R;
 import com.youtubeandroidplayerapidemo.utils.Constants;
-
-/**
- * Created by sonu on 10/11/17.
- * <p>
- * ### Here you need to extend the activity with YouTubeBaseActivity otherwise it will crash the app  ###
- */
 
 public class YoutubePlayerActivity extends YouTubeBaseActivity {
     private static final String TAG = YoutubePlayerActivity.class.getSimpleName();

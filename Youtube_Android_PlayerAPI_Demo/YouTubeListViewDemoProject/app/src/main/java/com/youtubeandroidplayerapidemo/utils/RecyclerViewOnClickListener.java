@@ -1,14 +1,11 @@
 package com.youtubeandroidplayerapidemo.utils;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
-/**
- * Created by Sajeev on 20-07-2017.
- */
+import androidx.recyclerview.widget.RecyclerView;
 
 public class RecyclerViewOnClickListener implements RecyclerView.OnItemTouchListener {
 

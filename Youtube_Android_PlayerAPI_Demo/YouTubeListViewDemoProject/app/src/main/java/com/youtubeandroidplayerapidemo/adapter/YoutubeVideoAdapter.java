@@ -1,25 +1,22 @@
 package com.youtubeandroidplayerapidemo.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubeThumbnailLoader;
 import com.google.android.youtube.player.YouTubeThumbnailView;
-import com.youtubeandroidplayerapidemo.utils.Constants;
 import com.youtubeandroidplayerapidemo.R;
-import com.youtubeandroidplayerapidemo.model.YoutubeVideoModel;
 import com.youtubeandroidplayerapidemo.holder.YoutubeViewHolder;
+import com.youtubeandroidplayerapidemo.model.YoutubeVideoModel;
+import com.youtubeandroidplayerapidemo.utils.Constants;
 
 import java.util.ArrayList;
-
-/**
- * Created by sonu on 10/11/17.
- */
 
 public class YoutubeVideoAdapter extends RecyclerView.Adapter<YoutubeViewHolder> {
     private static final String TAG = YoutubeVideoAdapter.class.getSimpleName();

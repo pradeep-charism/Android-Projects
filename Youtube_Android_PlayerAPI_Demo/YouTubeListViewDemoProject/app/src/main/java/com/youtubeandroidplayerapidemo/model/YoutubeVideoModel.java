@@ -1,10 +1,5 @@
 package com.youtubeandroidplayerapidemo.model;
 
-/**
- * Created by sonu on 10/11/17.
- * class to set and get the video id, title and duration for a video
- */
-
 public class YoutubeVideoModel {
     private String videoId, title,duration;
 
