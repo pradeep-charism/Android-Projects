@@ -28,6 +28,8 @@
     <string name="subject">Subject :</string>
     <string name="to">To :</string>
     <string name="send">Send</string>
+    <string name="enter_mobile">Enter Mobile #</string>
+    <string name="share_via_sms_text">I love this app called Marvel Trailers, you may download this on the Play store via this link \nhttps://play.google.com/store/apps/details?id=MarvelTrailers</string>
 
     <!--  we need to use video ids instead of video link  -->
     <string-array name="video_id_array">

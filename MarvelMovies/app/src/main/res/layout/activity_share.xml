@@ -1,35 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ShareActivity">
+    tools:context=".activity.ShareViaSmsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/smsToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/enterMobileDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Share this app via sms"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/enterMobileDisplay"
+        android:layout_width="142dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/enter_mobile"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smsToolBar" />
 
     <EditText
-        android:id="@+id/editMessageBox"
-        android:layout_width="match_parent"
-        android:layout_height="236dp"
-        android:layout_above="@id/sendMessage"
+        android:id="@+id/mobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
-        android:gravity="start|top"
-        android:hint="Type your text here"
-        android:inputType="textMultiLine" />
+        android:maxEms="10"
+        android:minEms="8"
+        android:numeric="integer"
+        android:phoneNumber="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/enterMobileDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/smsToolBar" />
+
+    <TextView
+        android:id="@+id/editMessageBox"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/share_via_sms_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mobileNumber" />
 
     <Button
         android:id="@+id/sendMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
+        android:layout_marginStart="293dp"
+        android:layout_marginLeft="293dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:onClick="sendMessage"
-        android:text="Send" />
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMessageBox" />
 
-    <Button
-        android:id="@+id/sendMessageDirectly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sendMessage"
-        android:layout_centerInParent="true"
-        android:onClick="sendMessageDirectly"
-        android:text="Send Direct" />
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.marvelmovies.activity.EmailActivity;
 import com.example.marvelmovies.activity.ListYoutubeMainActivity;
-import com.example.marvelmovies.activity.ShareActivity;
+import com.example.marvelmovies.activity.ShareViaSmsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void shareScreen(View v){
         Toast.makeText(getApplicationContext(), R.string.share_message, Toast.LENGTH_SHORT).show();
-        Intent shareScreen = new Intent(this, ShareActivity.class);
+        Intent shareScreen = new Intent(this, ShareViaSmsActivity.class);
         startActivity(shareScreen);
     }
 
