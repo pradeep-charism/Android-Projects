@@ -15,11 +15,14 @@
     <string name="seek_to_hint">Seconds</string>
     <string name="welcome_message">Welcome to Marvel trailers!</string>
     <string name="share_message">Share this app you love!</string>
+    <string name="ask_help">Ask admin for help!</string>
 
 
     <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
     <string name="close_player_activity">Close Player activity</string>
     <string name="list_trailer_view_heading">View your favorite trailer</string>
+    <string name="compose_email">Compose Email</string>
+    <string name="ask_admin_for_help">Ask admin for help!</string>
 
     <!--  we need to use video ids instead of video link  -->
     <string-array name="video_id_array">

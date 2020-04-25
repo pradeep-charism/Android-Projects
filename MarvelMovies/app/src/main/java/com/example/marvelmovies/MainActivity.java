@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.marvelmovies.activity.EmailActivity;
 import com.example.marvelmovies.activity.ListYoutubeMainActivity;
 import com.example.marvelmovies.activity.ShareActivity;
 
@@ -27,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
     public void shareScreen(View v){
         Toast.makeText(getApplicationContext(), R.string.share_message, Toast.LENGTH_SHORT).show();
         Intent shareScreen = new Intent(this, ShareActivity.class);
+        startActivity(shareScreen);
+    }
+
+    public void askHelp(View v){
+        Toast.makeText(getApplicationContext(), R.string.ask_help, Toast.LENGTH_SHORT).show();
+        Intent shareScreen = new Intent(this, EmailActivity.class);
         startActivity(shareScreen);
     }
 }
