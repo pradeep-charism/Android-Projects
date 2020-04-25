@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#EEEEEE"
     android:orientation="vertical"
-    tools:context="com.example.marvelmovies.activity.YoutubeMainActivity">
+    tools:context="com.example.marvelmovies.activity.ListYoutubeMainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

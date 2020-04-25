@@ -8,9 +8,9 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 
-public class SecondActivity extends YouTubeBaseActivity {
+import static com.example.marvelmovies.Config.YOUTUBE_API_KEY;
 
-    private final String DEVELOPER_API_KEY = "PRADEEP KUMAR DEVELOPER KEY";
+public class SingleYoutubeVideoActivity extends YouTubeBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class SecondActivity extends YouTubeBaseActivity {
     }
 
     private void addYoutubeFragment(YouTubePlayerFragment youtubeFragment, final String youtubeLink) {
-        youtubeFragment.initialize(DEVELOPER_API_KEY,
+        youtubeFragment.initialize(YOUTUBE_API_KEY,
                 new YouTubePlayer.OnInitializedListener() {
                     @Override
                     public void onInitializationSuccess(YouTubePlayer.Provider provider,

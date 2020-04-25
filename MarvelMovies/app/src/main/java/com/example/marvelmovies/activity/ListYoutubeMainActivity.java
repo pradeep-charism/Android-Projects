@@ -15,7 +15,7 @@ import com.example.marvelmovies.list.utils.RecyclerViewOnClickListener;
 
 import java.util.ArrayList;
 
-public class YoutubeMainActivity extends AppCompatActivity {
+public class ListYoutubeMainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
 
     @Override
@@ -41,7 +41,7 @@ public class YoutubeMainActivity extends AppCompatActivity {
      * populate the recyclerview and implement the click event here
      */
     private void populateRecyclerView() {
-        final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = generateDummyVideoList();
+        final ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = getVideoList();
         YoutubeVideoAdapter adapter = new YoutubeVideoAdapter(this, youtubeVideoModelArrayList);
         recyclerView.setAdapter(adapter);
 
@@ -51,7 +51,7 @@ public class YoutubeMainActivity extends AppCompatActivity {
             public void onItemClick(View view, int position) {
 
                 //start youtube player activity by passing selected video id via intent
-                startActivity(new Intent(YoutubeMainActivity.this, YoutubePlayerActivity.class)
+                startActivity(new Intent(ListYoutubeMainActivity.this, YoutubePlayerActivity.class)
                         .putExtra("video_id", youtubeVideoModelArrayList.get(position).getVideoId()));
 
             }
@@ -59,29 +59,19 @@ public class YoutubeMainActivity extends AppCompatActivity {
     }
 
 
-    /**
-     * method to generate dummy array list of videos
-     *
-     * @return
-     */
-    private ArrayList<YoutubeVideoModel> generateDummyVideoList() {
+    private ArrayList<YoutubeVideoModel> getVideoList() {
         ArrayList<YoutubeVideoModel> youtubeVideoModelArrayList = new ArrayList<>();
 
-        //get the video id array, title array and duration array from strings.xml
         String[] videoIDArray = getResources().getStringArray(R.array.video_id_array);
         String[] videoTitleArray = getResources().getStringArray(R.array.video_title_array);
-//        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
+        String[] videoDurationArray = getResources().getStringArray(R.array.video_duration_array);
 
-        //loop through all items and add them to arraylist
         for (int i = 0; i < videoIDArray.length; i++) {
-
             YoutubeVideoModel youtubeVideoModel = new YoutubeVideoModel();
             youtubeVideoModel.setVideoId(videoIDArray[i]);
             youtubeVideoModel.setTitle(videoTitleArray[i]);
-//            youtubeVideoModel.setDuration(videoDurationArray[i]);
-
+            youtubeVideoModel.setDuration(videoDurationArray[i]);
             youtubeVideoModelArrayList.add(youtubeVideoModel);
-
         }
 
         return youtubeVideoModelArrayList;
