@@ -24,6 +24,10 @@
     <string name="compose_email">Compose Email</string>
     <string name="ask_admin_for_help">Ask admin for help!</string>
     <string name="admin_email">ask.admin@gmail.com</string>
+    <string name="send_your_queries_to_admin">Send your queries to the admin!</string>
+    <string name="subject">Subject :</string>
+    <string name="to">To :</string>
+    <string name="send">Send</string>
 
     <!--  we need to use video ids instead of video link  -->
     <string-array name="video_id_array">

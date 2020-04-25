@@ -6,11 +6,20 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/emailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/send_your_queries_to_admin"/>
+
     <TextView
         android:id="@+id/textViewPhoneNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To : "
+        android:text="@string/to"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -24,7 +33,7 @@
         android:id="@+id/textViewSubject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subject : "
+        android:text="@string/subject"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
@@ -54,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Send"
+        android:text="@string/send"
         app:srcCompat="@drawable/sendemail40" />
 
 </LinearLayout>
