@@ -20,7 +20,7 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.youtube_player_activity);
+        setContentView(R.layout.activity_youtube_player);
         //get the video id
         videoID = getIntent().getStringExtra("video_id");
         youTubePlayerView = findViewById(R.id.youtube_player_view);

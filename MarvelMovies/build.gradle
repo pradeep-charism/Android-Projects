@@ -16,7 +16,7 @@ buildscript {
     }
 }
 
-allprojects {makePretty
+allprojects {
     repositories {
         google()
         jcenter()

@@ -88,6 +88,7 @@
         android:layout_marginRight="60dp"
         android:layout_marginBottom="75dp"
         android:contentDescription="@string/help"
+        android:onClick="askHelp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
