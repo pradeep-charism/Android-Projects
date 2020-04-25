@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.ListYoutubeMainActivity"/>
+        <activity android:name=".activity.ShareActivity"/>
         <activity android:name=".MainActivity"
             android:screenOrientation="fullSensor"
             android:windowSoftInputMode="stateAlwaysHidden">

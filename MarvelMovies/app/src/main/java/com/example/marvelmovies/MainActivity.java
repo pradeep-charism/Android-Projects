@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.marvelmovies.activity.ListYoutubeMainActivity;
+import com.example.marvelmovies.activity.ShareActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,5 +22,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), R.string.welcome_message, Toast.LENGTH_SHORT).show();
         Intent homeScreen = new Intent(this, ListYoutubeMainActivity.class);
         startActivity(homeScreen);
+    }
+
+    public void shareScreen(View v){
+        Toast.makeText(getApplicationContext(), R.string.share_message, Toast.LENGTH_SHORT).show();
+        Intent shareScreen = new Intent(this, ShareActivity.class);
+        startActivity(shareScreen);
     }
 }

@@ -23,11 +23,12 @@
         android:layout_marginRight="40dp"
         android:layout_marginBottom="75dp"
         android:contentDescription="@string/discussion_room"
+        android:onClick="shareScreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/helpButton"
         app:layout_constraintStart_toEndOf="@+id/playButton"
         app:layout_constraintTop_toBottomOf="@+id/marvel_universe"
-        app:srcCompat="@drawable/chatbutton" />
+        app:srcCompat="@drawable/share40" />
 
     <ImageView
         android:id="@+id/marvel_trailers_logo"

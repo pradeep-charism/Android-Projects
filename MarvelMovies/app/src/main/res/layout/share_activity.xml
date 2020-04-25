@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editMessageBox"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_above="@id/sendMessage"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type your text here"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/sendMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:onClick="sendMessage"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/sendMessageDirectly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendMessage"
+        android:layout_centerInParent="true"
+        android:onClick="sendMessageDirectly"
+        android:text="Send Direct" />
+</RelativeLayout>
