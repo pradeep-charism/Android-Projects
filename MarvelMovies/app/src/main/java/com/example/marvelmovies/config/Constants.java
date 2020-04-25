@@ -1,4 +1,4 @@
-package config;
+package com.example.marvelmovies.config;
 
 public class Constants {
 

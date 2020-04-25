@@ -10,7 +10,7 @@
     android:paddingTop="10dp"
     android:paddingRight="10dp"
     android:paddingBottom="10dp"
-    tools:context=".MainActivity">
+    tools:context="com.example.marvelmovies.MainActivity">
 
     <ImageButton
         android:id="@+id/discussionButton"

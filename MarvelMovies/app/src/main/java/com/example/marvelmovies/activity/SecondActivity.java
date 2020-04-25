@@ -1,7 +1,8 @@
-package com.example.marvelmovies;
+package com.example.marvelmovies.activity;
 
 import android.os.Bundle;
 
+import com.example.marvelmovies.R;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;

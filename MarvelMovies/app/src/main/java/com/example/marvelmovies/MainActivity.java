@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.marvelmovies.activity.YoutubeMainActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -17,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void viewTrailersScreen(View v){
         Toast.makeText(getApplicationContext(), R.string.welcome_message, Toast.LENGTH_SHORT).show();
-        Intent homeScreen = new Intent(this, SecondActivity.class);
+        Intent homeScreen = new Intent(this, YoutubeMainActivity.class);
         startActivity(homeScreen);
     }
 }
