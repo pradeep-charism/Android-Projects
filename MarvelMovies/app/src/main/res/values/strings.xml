@@ -14,39 +14,37 @@
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
     <string name="welcome_message">Welcome to Marvel trailers!</string>
-    <string name="captain_marvel_link">0LHxvxdRnYc</string>
-    <string name="thanos_vs_ironman_fight">osSJhXruEzU</string>
-    <string name="infinity_war">6ZfuNTqbHE8</string>
 
 
     <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
     <string name="close_player_activity">Close Player activity</string>
+    <string name="list_trailer_view_heading">View your favorite trailer</string>
 
     <!--  we need to use video ids instead of video link  -->
     <string-array name="video_id_array">
-        <item>CqhpNxI8qYw</item>
-        <item>sasCrpgHDy8</item>
-        <item>iJeh3x09Ya8</item>
-        <item>B5zRaD7B504</item>
-        <item>9qWHzj8k-Uo</item>
-        <item>RjiK45wC924</item>
-        <item>RH3zaLO8H4E</item>
-        <item>o14pyzosjvk</item>
-        <item>5SQrpBQne7A</item>
-        <item>5WJ3r67ORxo</item>
+        <item>osSJhXruEzU</item>
+        <item>6ZfuNTqbHE8</item>
+        <item>0LHxvxdRnYc</item>
+        <item>ybji16u608U</item>
+        <item>6ZfuNTqbHE8</item>
+        <item>TcMBFSGVi1c</item>
+        <item>Z1BCujX3pw8</item>
+        <item>ue80QwXMRHg</item>
+        <item>xjDjIWPwcPU</item>
+        <item>pWdKf3MneyI</item>
     </string-array>
 
     <string-array name="video_title_array">
-        <item>Android Security Lock Demo</item>
-        <item>Android Sectioned RecyclerView Demo</item>
-        <item>Android Home Screen Widgets Demo</item>
-        <item>Android Floating Widget like Facebook Messenger Chat Head Demo</item>
-        <item>Android Google Maps Introduction Demo</item>
-        <item>Android Lollipop Activity Transitions Demo</item>
-        <item>Android Toolbar Animation Using Design Support Library Demo</item>
-        <item>Android Material Advance Tabs Demo</item>
-        <item>Android Drag and Drop Demo</item>
-        <item>Android Fingerprint Authentication Demo</item>
+        <item>Iron Man Vs Thanos - Fight Scene - Avengers Infinity War (2018)</item>
+        <item>Marvel Studios Avengers: Infinity War Official Trailer</item>
+        <item>Marvel Studios Captain Marvel - Trailer 2</item>
+        <item>Marvel Studios Black Widow | Final Trailer</item>
+        <item>Marvel Studios Avengers: Infinity War Official Trailer</item>
+        <item>Marvel Studios Avengers: Endgame - Official Trailer</item>
+        <item>Marvel Studios Captain Marvel - Official Trailer</item>
+        <item>Thor: Ragnarok Official Trailer</item>
+        <item>Marvel Studios Black Panther - Official Trailer</item>
+        <item>Marvel\'s Ant-Man - Trailer 1</item>
     </string-array>
 
     <string-array name="video_duration_array">

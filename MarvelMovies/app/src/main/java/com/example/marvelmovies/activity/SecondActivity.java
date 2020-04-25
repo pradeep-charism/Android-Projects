@@ -17,7 +17,7 @@ public class SecondActivity extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        addYoutubeFragment(getYoutubeFragmentFor(R.id.youtubeFragment1), getString(R.string.captain_marvel_link));
+        addYoutubeFragment(getYoutubeFragmentFor(R.id.youtubeFragment1), "xjDjIWPwcPU");
 
     }
 
